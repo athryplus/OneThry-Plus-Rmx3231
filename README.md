@@ -41,22 +41,41 @@ It unifies key Magisk tweaks, Nothing OS typography, display wake fixes, and cus
 | **Performance Mode** | 🟢 Working | Boosted via custom scripts |
 | **ADB & MTP** | 🟢 Working | Fast file transfer & debugging |
 | **System Gestures** | 🟢 Working | Smooth navigation |
-| **Always-On Display (AOD)** | 🟢 Working | Fixed via Doze Disabler |
+| **Always-On Display (AOD)** | 🟢 Working | Fixed via TrebleDroid settings & Doze Disabler |
 | **Double Tap to Wake (DT2W)** | 🟡 Partial | Working, but occasionally buggy |
-| **3.5mm Headphone Jack** | 🔴 Broken | Fixable via manual audio patch |
+| **3.5mm Headphone Jack** | 🟢 Working | Working via manual TrebleDroid toggle |
 | **System Partition** | 🔒 Read-Only | Standard EROFS / Read-Only GSI layout |
 
 ---
 
-## 🛠️ Requirements & Quick Setup
+## 🛠️ Installation & Setup Guide
 
-> **Prerequisite:** Root access via Magisk and an unlocked bootloader are **mandatory** (*ROOT is required*).
+> **Prerequisites:** Root access via Magisk and an unlocked bootloader are **mandatory** (*ROOT is required*).
 
+### 1. Initial Flashing Steps
 1. **Unlock Bootloader**: Follow the RMX3231 unlocking guide by **GamingHkr** on YouTube.
 2. **Flash Recovery**: Flash `twrp-root-rmx3231.img` via `fastbootd`.
 3. **Install GSI**: Flash **LineageOS 20.1 GSI** by **AndyYan**.
 4. **Flash OneThryPlus Pack**: Flash the unified module package via Magisk / TWRP.
 5. **Set Script Permissions**: Ensure `LowRamKill.sh` and `Service.sh` are set up with proper executable permissions (`chmod +x`).
+
+---
+
+### ⚙️ 2. Required Manual TrebleDroid Configurations
+
+> **⚠️ IMPORTANT NOTE:** The following steps **MUST BE DONE MANUALLY** after booting into the system. These settings are NOT applied automatically by scripts, so take your time to configure them properly.
+
+Go to **Settings ➔ TrebleDroid Settings** and enable the following options:
+
+#### 🎧 Misc Features
+* **Force headset switch**: `ENABLE`
+* **Use alternate way to detect headsets**: `ENABLE`
+* **Force allow Always On Display**: `ENABLE`
+* **Force Alternative backlight**: `ENABLE`
+* **Double tap to wake**: `ENABLE`
+
+#### 💤 Doze Features
+* **Enable hardware gestures**: `ENABLE`
 
 ---
 
