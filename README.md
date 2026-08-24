@@ -43,7 +43,7 @@ It unifies key Magisk tweaks, Nothing OS typography, display wake fixes, and cus
 | **System Gestures** | 🟢 Working | Smooth navigation |
 | **Always-On Display (AOD)** | 🟢 Working | Fixed via TrebleDroid settings & Doze Disabler |
 | **Double Tap to Wake (DT2W)** | 🟡 Partial | Working, but occasionally buggy |
-| **3.5mm Headphone Jack** | 🟢 Working | Working via manual TrebleDroid toggle |
+| **3.5mm Headphone Jack** |🔴 Broken | Broken but you can fix it manually |
 | **System Partition** | 🔒 Read-Only | Standard EROFS / Read-Only GSI layout |
 
 ---
